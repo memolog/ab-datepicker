@@ -2847,7 +2847,7 @@
 		} else if (hh > 11 && ampm == "AM") {
 			hh -= 12;
 		}
-		return new Date(year, month - 1, date, hh, mm, ss);
+		return date ? new Date(year, month - 1, date, hh, mm, ss) : new Date(year, month - 1);
 	} // end createDateFromFormat()
 
 	/**
